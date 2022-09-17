@@ -1,7 +1,6 @@
-<img align="right" width="190" height="90" src="resources/k8s-sec-alert.svg">
+<img align="right" width="190" height="130" src="resources/k8s-sec-alert.svg">
 
 # Kubernetes-Sec-Alert - Track Kubernetes CVEs by native GitHub notifications!
----
 
 ## How it works
 - Scheduled script every hour fetches the cves list from the [Official Kubernetes CVE Feed](https://kubernetes.io/docs/reference/issues-security/official-cve-feed/) and opens an issue labeled with the CVE id.
