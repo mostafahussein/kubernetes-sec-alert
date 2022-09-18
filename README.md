@@ -9,6 +9,8 @@
 ## How to subscribe
 - You can subscribe to new issue by watching this repoistory.
 
+![watch-repo](resources/watch-repo.png)
+
 ## Contributing
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
