@@ -1,6 +1,7 @@
 name: k8s cve notifications
 
 on:
+  workflow_dispatch:
   schedule:
     - cron:  '0 * * * *'
 env:
