@@ -1,0 +1,24 @@
+name: k8s cve notifications
+
+on:
+  schedule:
+    - cron:  '0 * * * *'
+env:
+  CVE_FEED: ${{ secrets.CVE_FEED }}
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+  REPO_OWNER: ${{ secrets.REPO_OWNER }}
+  REPO_NAME: ${{ secrets.REPO_NAME }}
+
+jobs:
+  cve-checker:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-go@v3
+        with:
+          go-version: '1.19.1'
+
+      - run: make
