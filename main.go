@@ -94,7 +94,7 @@ func main() {
 				log.Info("Label " + issueLabel + " created")
 			}
 		}
-		searchQuery := "user:" + os.Getenv("REPO_OWNER") + "repo:" + os.Getenv("REPO_NAME") + " label:" + issueLabel
+		searchQuery := "user:" + os.Getenv("REPO_OWNER") + " repo:" + os.Getenv("REPO_NAME") + " label:" + issueLabel
 		existingIssues, _, err := client.Search.Issues(ctx, searchQuery, nil)
 		if err != nil {
 			log.Warn(err)
