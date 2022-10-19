@@ -115,5 +115,6 @@ func main() {
 				log.Info("Issue " + issueLabel + " created")
 			}
 		}
+		time.Sleep(5 * time.Second)
 	}
 }
